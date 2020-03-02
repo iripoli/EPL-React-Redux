@@ -66,7 +66,7 @@ class App extends Component {
 
     return (
 
-      <div className="tc">
+      <div className="tc" style={{overflow:'hidden'}}>
         <h1>PREMIER LEAGUE TEAMS</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
