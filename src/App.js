@@ -4,6 +4,7 @@ import CardList from './components/cardList/cardList'
 import './App.css';
 import SearchBox from './components/searchbox/searchbox';
 import Scroll from './components/scroll/scroll';
+import ErrorBoundry from './components/errorBoundry/errorBoundry';
 
 
 class App extends Component {
@@ -36,42 +37,46 @@ class App extends Component {
 
   render() {
 
-    const {teams, searchbox} = this.state
+    const { teams, searchbox } = this.state
 
     const filteredTeams = teams.filter(team => {
       return team.strTeam.toLowerCase().includes(searchbox.toLowerCase()
       )
     })
     if (!teams.length) {
-      return(
+      return (
         <div className="tc">
           <h1>PREMIER LEAGUE TEAMS</h1>
           <SearchBox searchChange={this.onSearchChange} />
-           <h1>Loading...</h1>
+          <h1>Loading...</h1>
         </div>
-      )}
-      if (!filteredTeams.length ){
-        return(
-          <div className="tc">
-            <h1>PREMIER LEAGUE TEAMS</h1>
-            <SearchBox searchChange={this.onSearchChange} />
-             <h2>Couldn't find any team</h2>
-          </div>
-        )}
-        
-      
-      
-      return(
-    
+      )
+    }
+    if (!filteredTeams.length) {
+      return (
+        <div className="tc">
+          <h1>PREMIER LEAGUE TEAMS</h1>
+          <SearchBox searchChange={this.onSearchChange} />
+          <h2>Couldn't find any team</h2>
+        </div>
+      )
+    }
+
+
+
+    return (
+
       <div className="tc">
         <h1>PREMIER LEAGUE TEAMS</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
-          <CardList teams={filteredTeams} />
+          <ErrorBoundry>
+            <CardList teams={filteredTeams} />
+          </ErrorBoundry>
         </Scroll>
       </div>
 
-        
+
 
     );
   }
