@@ -1,0 +1,46 @@
+
+@font-face{
+  font-family: eplFont;
+  src: url('./assets/fonts/Barclays\ Premier\ League.ttf');
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(112,200,232,1) 0%, rgba(155,236,246,1) 58%, rgba(178,226,244,0) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.badge{
+  height: 100px;
+  width: 100px;
+}
+
+.card{
+  background-color: wheat;
+  width: 150px;
+  height: 200px;
+}
+
+.card:hover{
+  background-color: lightgreen;
+  opacity: 0.75;
+}
+
+h1{
+  font-family: eplFont;
+}
+
+.searchbox{
+  margin-bottom: 20px;
+}
