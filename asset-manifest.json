@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/EPL-React-Redux/static/css/main.ac628443.chunk.css",
-    "main.js": "/EPL-React-Redux/static/js/main.e03486ec.chunk.js",
-    "main.js.map": "/EPL-React-Redux/static/js/main.e03486ec.chunk.js.map",
+    "main.js": "/EPL-React-Redux/static/js/main.01872a76.chunk.js",
+    "main.js.map": "/EPL-React-Redux/static/js/main.01872a76.chunk.js.map",
     "runtime-main.js": "/EPL-React-Redux/static/js/runtime-main.9c894088.js",
     "runtime-main.js.map": "/EPL-React-Redux/static/js/runtime-main.9c894088.js.map",
     "static/css/2.eb45ad44.chunk.css": "/EPL-React-Redux/static/css/2.eb45ad44.chunk.css",
-    "static/js/2.1de52d83.chunk.js": "/EPL-React-Redux/static/js/2.1de52d83.chunk.js",
-    "static/js/2.1de52d83.chunk.js.map": "/EPL-React-Redux/static/js/2.1de52d83.chunk.js.map",
+    "static/js/2.6d0d0e79.chunk.js": "/EPL-React-Redux/static/js/2.6d0d0e79.chunk.js",
+    "static/js/2.6d0d0e79.chunk.js.map": "/EPL-React-Redux/static/js/2.6d0d0e79.chunk.js.map",
     "index.html": "/EPL-React-Redux/index.html",
-    "precache-manifest.7a6f064e7e7ef760ffa9dc36fb280150.js": "/EPL-React-Redux/precache-manifest.7a6f064e7e7ef760ffa9dc36fb280150.js",
+    "precache-manifest.bb9863067cbfc14984efe89e94ae2236.js": "/EPL-React-Redux/precache-manifest.bb9863067cbfc14984efe89e94ae2236.js",
     "service-worker.js": "/EPL-React-Redux/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/EPL-React-Redux/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.ac628443.chunk.css.map": "/EPL-React-Redux/static/css/main.ac628443.chunk.css.map",
-    "static/js/2.1de52d83.chunk.js.LICENSE.txt": "/EPL-React-Redux/static/js/2.1de52d83.chunk.js.LICENSE.txt",
+    "static/js/2.6d0d0e79.chunk.js.LICENSE.txt": "/EPL-React-Redux/static/js/2.6d0d0e79.chunk.js.LICENSE.txt",
     "static/media/index.css": "/EPL-React-Redux/static/media/Barclays Premier League.81f19c17.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.9c894088.js",
     "static/css/2.eb45ad44.chunk.css",
-    "static/js/2.1de52d83.chunk.js",
+    "static/js/2.6d0d0e79.chunk.js",
     "static/css/main.ac628443.chunk.css",
-    "static/js/main.e03486ec.chunk.js"
+    "static/js/main.01872a76.chunk.js"
   ]
 }

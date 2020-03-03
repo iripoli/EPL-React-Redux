@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fbe3660b68bb2408cbf52006bd88611",
+    "revision": "a82d5315279cb214532e74d335f43772",
     "url": "/EPL-React-Redux/index.html"
   },
   {
-    "revision": "50a0f68ff848b54ee63c",
+    "revision": "ae128983f3f8a0394f48",
     "url": "/EPL-React-Redux/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "997a54dd7ac1a15aed80",
+    "revision": "f326641780e752777b74",
     "url": "/EPL-React-Redux/static/css/main.ac628443.chunk.css"
   },
   {
-    "revision": "50a0f68ff848b54ee63c",
-    "url": "/EPL-React-Redux/static/js/2.1de52d83.chunk.js"
+    "revision": "ae128983f3f8a0394f48",
+    "url": "/EPL-React-Redux/static/js/2.6d0d0e79.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/EPL-React-Redux/static/js/2.1de52d83.chunk.js.LICENSE.txt"
+    "url": "/EPL-React-Redux/static/js/2.6d0d0e79.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "997a54dd7ac1a15aed80",
-    "url": "/EPL-React-Redux/static/js/main.e03486ec.chunk.js"
+    "revision": "f326641780e752777b74",
+    "url": "/EPL-React-Redux/static/js/main.01872a76.chunk.js"
   },
   {
     "revision": "20b6fe6c3711e3fde551",
