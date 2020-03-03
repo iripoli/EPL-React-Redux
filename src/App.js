@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import CardList from './components/cardList/cardList'
 import './App.css';
@@ -6,14 +7,28 @@ import SearchBox from './components/searchbox/searchbox';
 import Scroll from './components/scroll/scroll';
 import ErrorBoundry from './components/errorBoundry/errorBoundry';
 
+import { setSearchBox } from './actions'
+
+
+
+const mapStateToProps = state =>{
+  return {
+    searchBox: state.searchBox
+  }
+}
+
+const mapDispatchToProps = (dispatch)=>{
+  return{
+  onSearchChange: (event)=>dispatch(setSearchBox(event.target.value))
+  }
+}
 
 class App extends Component {
 
   constructor() {
     super()
     this.state = {
-      teams: [],
-      searchbox: ''
+      teams: []
     }
   }
 
@@ -24,30 +39,25 @@ class App extends Component {
       })
       .then(teamsData => {
         return (
-          console.log(teamsData),
           this.setState({ teams: teamsData.teams }));
       })
-      .then(() => console.log(this.teamsData))
-  }
-
-  onSearchChange = (event) => {
-    this.setState({ searchbox: event.target.value })
   }
 
 
   render() {
 
-    const { teams, searchbox } = this.state
+    const { teams } = this.state
+    const { searchBox, onSearchChange } = this.props
 
     const filteredTeams = teams.filter(team => {
-      return team.strTeam.toLowerCase().includes(searchbox.toLowerCase()
+      return team.strTeam.toLowerCase().includes(searchBox.toLowerCase()
       )
     })
     if (!teams.length) {
       return (
         <div className="tc">
           <h1>PREMIER LEAGUE TEAMS</h1>
-          <SearchBox searchChange={this.onSearchChange} />
+          <SearchBox searchChange={onSearchChange} />
           <h1>Loading...</h1>
         </div>
       )
@@ -56,7 +66,7 @@ class App extends Component {
       return (
         <div className="tc">
           <h1>PREMIER LEAGUE TEAMS</h1>
-          <SearchBox searchChange={this.onSearchChange} />
+          <SearchBox searchChange={onSearchChange} />
           <h2>Couldn't find any team</h2>
         </div>
       )
@@ -68,7 +78,7 @@ class App extends Component {
 
       <div className="tc" style={{overflow:'hidden'}}>
         <h1>PREMIER LEAGUE TEAMS</h1>
-        <SearchBox searchChange={this.onSearchChange} />
+        <SearchBox searchChange={onSearchChange} />
         <Scroll>
           <ErrorBoundry>
             <CardList teams={filteredTeams} />
@@ -83,4 +93,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

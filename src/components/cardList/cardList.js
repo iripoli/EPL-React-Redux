@@ -4,8 +4,6 @@ import Card from '../card/cards.js'
 
 
 const CardList = ({teams}) => {
-  console.log(teams)
-
   return (
     <div>
       {teams.map((team, i) => {
